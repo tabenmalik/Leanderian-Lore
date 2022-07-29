@@ -1,0 +1,18 @@
+.textdivider{
+	height:2em;
+	width:100%;
+	margin:2em 0 0 0;
+	border-top:#DA0F00 solid 3px;
+	clear:both;
+}
+
+.profile_pic{
+	float:left;
+}
+
+.message_wrapper{
+	border:green dashed 1px;
+	height:20em;
+	width:100%;
+	
+}

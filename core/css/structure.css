@@ -1,0 +1,60 @@
+html
+{
+	margin: 0;
+	padding: 0;
+	height:100%;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#structure
+{
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+tr, td
+{
+	margin:0;
+	padding: 0;
+}
+
+#top, #top > td
+{
+	height:7em;
+}
+
+#top .left, #top .right, #center .left, #center .right, #bottom .left, #bottom .right
+{
+	width: 8em;
+}
+
+#center > td
+{
+	height:auto;
+}
+
+#center .center
+{
+	padding-top: 3em;
+}
+
+#bottom > td
+{
+	height:4em;
+}
+
+
+a
+{
+	color:blue;
+	text-decoration:underline;
+}

@@ -1,0 +1,36 @@
+/*div*/
+.board{
+	border:2px solid #CCCCCC;
+	width:100%;
+	min-height:4em;
+	padding:10px 10px;
+	margin: 0 15px 15px 0px;
+}
+
+.message{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.hide{
+	display:none;
+}
+
+.tab{
+	display:inline;
+	padding: 2px 3px 2px 3px;
+	border: 2px solid #CCCCCC;
+}
+
+.highlight{
+	border: 3px solid black;
+	background-color: #000099;
+	color: white;
+}
+
+.messagetitle{
+	margin:0px 0px 20px 0px;
+	padding-bottom:5px;
+	border-bottom: #DA0F00 3px solid;
+}
+

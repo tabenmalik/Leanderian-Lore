@@ -1,0 +1,44 @@
+/******************************************
+	This is css for the structure
+******************************************/
+
+html{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+body{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+#structure{
+	border-collapse:collapse;
+	height:100%;
+	width:100%;
+}
+
+#structure #top{
+	height:5em;
+	background-color:#000099;
+	vertical-align: top;
+}
+
+#structure #right{
+	width:10em;
+	background-color:#000099;
+}
+
+#structure #bottom{
+	height:4em;
+	background-color:#CCCCCC;
+}
+
+#main{
+	min-width:30em;
+	max-width: 50em;
+	margin:auto;
+	padding:2em;
+}

@@ -1,12 +1,13 @@
-<nav>
-	<table>
-		<tr>
-			<td><a href="index.php"		>Lore</a></td>
-			<td><a href="archive.php"	>Archive</a></td>
-			<td><a href="about.php"		>About</a></td>
-			<td><a href="contact.php"	>Contact</a></td>
-			<td><a href="account.php"	>Account</a></td>
-			<td><a href="logout.php"	>Logout</a></td>
-		</tr>
-	</table>
-</nav>
+<table id="nav">
+<tr>
+	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Lore</a></td>
+	<td class="navdivider"></td>
+	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Library</a></td>
+	<td class="navdivider"></td>
+	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">JOTW</a></td>
+	<td class="navdivider"></td>
+	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">About</a></td>
+	<td class="navdivider"></td>
+	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Contact</a></td>
+</tr>
+</table>

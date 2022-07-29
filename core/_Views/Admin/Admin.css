@@ -1,0 +1,129 @@
+*{
+	//border:1px dashed green;
+}
+
+html,body{
+	padding:0;
+	margin:0;
+	border:none;
+	height:100%;
+}
+
+.fullLength{
+	width:100%;
+}
+
+.fullHeight{
+	height:100%;
+}
+
+.centered{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.clearPaddingAndMargin{
+	margin:0;
+	padding:0;
+}
+
+.wrapper{
+	min-height: 100%;
+	margin: 0 auto -5em;
+	background-color: #f0f0f0;
+	background-image: url(http://www.transparenttextures.com/patterns/otis-redding.png);
+}
+
+footer, .push{
+	height: 5em;
+}
+
+#banner{
+	height:8em;
+	text-align:center;
+	
+	
+	background-color: #0025ba;
+	background-image: url(http://www.transparenttextures.com/patterns/otis-redding.png);
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#title{
+	color:white;
+	display:inline;
+	font-size:4em;
+	vertical-align:middle;
+	position:relative;
+}
+
+#navBarContainer{
+	height:3em;
+	text-align:center;
+	background-color: #9e9e9e;
+	background-image: url(http://www.transparenttextures.com/patterns/otis-redding.png);
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+
+#contentContainer{
+	padding-top:2em;
+	padding-bottom:2em;
+	background-color: #f0f0f0;
+	background-image: url(http://www.transparenttextures.com/patterns/otis-redding.png);
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.content{
+	width:50%;
+	margin:auto;
+	min-height:15em;
+	background-color:white;
+	border:2px solid grey;
+	border-radius:20px;
+}
+
+#nav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display:inline-block;
+	height:100%;
+}
+
+#nav li{
+	float:left;
+	margin:0;
+	padding:0;
+	background-color:#9e9e9e;
+	height:100%;
+	padding-left:8px;
+	padding-right:8px;
+	border-left:1px solid #4C4C4C;
+	border-right:1px solid #4C4C4C;
+}
+
+#nav a{
+	text-decoration:none;
+	display:inline-block;
+	color:white;
+	background-color:#9e9e9e;
+	padding:0;
+	margin:0;
+	font-size:1.7em
+}
+
+#nav{
+	height:100%;
+}
+
+footer{
+	height:5em;
+	text-align:center;
+	background-color: #9e9e9e;
+	background-image: url(http://www.transparenttextures.com/patterns/otis-redding.png);
+}
+
+footer p{
+	margin:0;
+	padding:0;
+}

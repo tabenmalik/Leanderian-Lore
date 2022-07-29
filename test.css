@@ -1,0 +1,194 @@
+div
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	
+}
+
+.divider
+{
+	border-top:black solid 3px;
+	height:1em;
+}
+
+/*top left corner*/
+#top .left > div
+{
+	background-color: #000099;
+	border-bottom: #CCCCCC solid 3px;
+	border-left: #CCCCCC solid 3px;
+	border-bottom-left-radius: 100px;
+	min-height:100%;
+	min-width:8em;
+}
+
+/*top center edge*/
+#top .center > div
+{
+	background-color: #000099;
+	border-bottom: #CCCCCC solid 3px;
+	max-height:7em;
+	white-space: nowrap;
+	min-width: 60em;
+}
+
+#logo
+{
+	height:6em;
+	margin-top:8px;
+}
+
+#nav
+{
+	float:right;
+	margin-right:8em;
+	border-collapse: collapse;
+	margin-top:3.25em;
+}
+
+#nav .navUnit
+{
+	position:relative;
+	width: 3em;
+}
+
+#nav tr td img
+{
+	width:100%;
+	height:1.7em;
+	padding:0;
+	margin:0;
+	display: block;
+}
+
+
+#nav tr .blocklink
+{
+	background-color:#DA0F00;
+	font-size:1.3em;
+	padding:2px;
+	text-shadow: 2px 2px black;
+	text-align:center;
+	width:initial;
+	padding: 3px;
+	display: block;
+	color:white;
+	text-decoration:none;
+}
+
+#nav .divider
+{
+	background-color: transparent;
+	width:20px;
+}
+
+/*top right corner*/
+#top .right > div
+{
+	background-color: #000099;
+	min-width:8em;
+}
+
+/*center left edge*/
+#center .left > div
+{
+	
+}
+
+/*center center*/
+#center .center > div
+{
+	width:40em;
+	margin:auto;
+}
+
+.b-wrap{
+	background-image: url('background.PNG');
+}
+
+/*center right edge*/
+#center .right
+{
+	overflow:hidden;
+}
+
+#center .right > div
+{
+	background-color: #000099;
+	border-left: #CCCCCC solid 3px;
+}
+
+/*bottom left corner*/
+#bottom .left > div
+{
+	background-color: #CCCCCC;
+}
+
+/*bottom center edge*/
+#bottom .center > div
+{
+	background-color: #CCCCCC;
+}
+
+#socialmedia
+{
+	width:12em;
+	height:42px;
+	float:right;
+	margin-top:7px;
+}
+
+.sociallink
+{
+	height:24px;
+	width:24px;
+	padding:8px;
+	display:inline-block;
+	margin-right:3px;
+	float:right;
+}
+
+.sociallink > img
+{
+	width:24px;
+	height:24px;
+}
+
+.facebooklink
+{
+	background-color:#3b5998;
+}
+
+.twitterlink
+{
+	background-color:#55ACEE;
+	height:20px;
+	width:20px;
+	padding:10px;
+}
+
+.twitterlink > img
+{
+	height:19px;
+	width:19px;
+}
+
+.googlepluslink
+{
+	background-color:#dd4b39;
+}
+
+/*bottom right corner*/
+#bottom .right 
+{
+	overflow:hidden;
+	background-color: #CCCCCC;
+}
+
+#bottom .right > div
+{
+	background-color: #000099;
+	border-left: #CCCCCC solid 3px;
+	border-bottom-left-radius: 100px;
+}
