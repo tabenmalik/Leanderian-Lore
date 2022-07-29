@@ -1,0 +1,65 @@
+*{
+	border: 1px dashed green;
+}
+
+html{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+body{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+a{
+	text-decoration:none;
+}
+
+#structure{
+	border-collapse:collapse;
+	height:100%;
+	width:100%
+}
+
+#structure #top{
+	height:10em;
+	background-color:blue;
+	vertical-align: top;
+}
+
+#structure #right{
+	width:17em;
+	background-color:blue;
+}
+
+#structure #bottom{
+	height:5em;
+	background-color:grey;
+}
+
+header{
+	height:100%;
+	width:100%;
+}
+
+nav{
+	float:right;
+}
+
+nav td{
+	background-color:red;
+
+}
+
+nav a{
+	color:white;
+	font-size:1.5em;
+}
+
+#logo{
+	color:white;
+	margin-top:3em;
+}
