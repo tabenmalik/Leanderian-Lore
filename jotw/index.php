@@ -3,13 +3,20 @@
 	
 	$DIR_PATH = '../';
 	$PAGE = 'jotw';
-	require_once $DIR_PATH.'core/section/visitorinformation.php';
-	require_once $DIR_PATH.'core/section/overall/head.php';
+	require_once $DIR_PATH.'core/init/maininit.php';
+	protect();
 ?>
-<div>
-
-</div>
 
 <?php
-	require_once $DIR_PATH.'core/section/overall/tail.php';
+	require_once $DIR_PATH.'core/section/overall/head.php';
+?>
+
+<div>
+<h2 class="messagetitle">Joke of the Week</h2>
+<p>What's green and has wheels?</p>
+<p>Grass</p>
+<p>I lied about the wheels</p>
+</div>
+<?php
+	require_once $DIR_PATH.'core/section/overall/foot.php';
 ?>

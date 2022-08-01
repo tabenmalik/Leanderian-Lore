@@ -1,1 +1,0 @@
-<h1 id="logo">Leanderian Lore</h1>

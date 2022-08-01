@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Leanderian Lore</title>
+		
+		<link href="jquery.booklet.1.4.4/booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+		
+		<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script> window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>') </script>
+		
+		<!-- Booklet -->
+		<script src="jquery.booklet.1.4.4/booklet/jquery.easing.1.3.js"></script>
+		<script src="jquery.booklet.1.4.4/booklet/jquery.booklet.latest.min.js"></script>
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<style>
+			html{
+				height:100%;
+			}
+			
+			body{
+				background-color:red;
+				height:100%;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="background">
+			<div id="outerbook">
+			
+			
+				<div id="innerbook">
+					<div id="page1">
+						<h3>Yay, page 1!</h3>
+					</div>
+					
+					<div id="page2">
+						<h3>Yay, page 2!</h3>
+					</div>
+					
+					<div id="page3">
+						<h3>Yay, page 3!</h3>
+					</div>
+					
+					<div id="page4">
+						<h3>Yay, Page 4!</h3>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</body>
+	
+	<script>
+			$('#innerbook').booklet();
+		
+	</script>
+</html>

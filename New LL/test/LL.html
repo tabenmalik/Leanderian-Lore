@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Leanderian Lore</title>
+
+<link href="jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="jquery.booklet.latest.min.js"></script>
+
+</head>
+<body>
+
+<div id="booklet">
+    <div>
+        <h4> page 1 </h4>
+    </div>
+    <div>
+        <h4> page 2 </h4>
+    </div>
+    <div>
+        <h4> page 3 </h4>
+    </div>
+    <div>
+        <h4> page 4 </h4>
+    </div>
+</div>
+
+<button type="button">Add new Chapter</button>
+
+<p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tellus et elit ultricies iaculis bibendum eu arcu. Nam ut ante tellus, sed semper velit. Pellentesque ac odio ligula. Donec sem dui, iaculis vel euismod a, vulputate ac mi. Nam ut lorem neque. Praesent lacinia molestie est, et luctus nunc venenatis id. Vivamus id mi elit. Fusce in magna at diam commodo tincidunt at quis ante. Donec ac dolor risus. Quisque vehicula ultrices faucibus.</p>
+
+<script>
+
+var created;
+$("#booklet").booklet({
+	width: 800,
+	height:600,
+	add: function(event, data){
+			created = data.page;
+			created = $(created);
+		}
+	});
+
+function newChapter(chNumber, chName, chText){
+
+    var maxHeight = 550;
+    var lateText = "";
+    var words = chText.split(' ');
+    var pageCount = 1;
+
+    $("#booklet").booklet("add","end","<div><p class=\"Chapter"+chNumber+"\"></p></div>");
+	created.prepend("<h4 class=\"Chapter"+chNumber+"Title\">"+ chName +"</h4>");
+    var titleHeight = $(".Chapter"+chNumber+"Title").height();
+
+    for(var i = 0; i < words.length; i++){
+        created.children(".Chapter"+chNumber).text(created.children(".Chapter"+chNumber).text() + ' ' + words[i]);
+
+		var currHeight = created.height();
+		if(pageCount == 1)
+			currHeight += titleHeight;
+
+        if(currHeight > maxHeight){
+            created.children(".Chapter"+chNumber).text(lateText);
+            pageCount += 1;
+            $("#booklet").booklet("add","end","<div><p class=\"Chapter" + chNumber + "\"></p></div>");
+            created.children(".Chapter"+chNumber).text(words[i]);
+            lateText = "";
+        }
+        lateText += " " + words[i];
+    }
+}
+
+$("button").click( function(){
+	newChapter(1, "Lorum ipsum", $("#lorem").text() );
+});
+
+</script>
+
+</body>
+</html>

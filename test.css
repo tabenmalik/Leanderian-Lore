@@ -6,12 +6,6 @@ div
 	
 }
 
-.divider
-{
-	border-top:black solid 3px;
-	height:1em;
-}
-
 /*top left corner*/
 #top .left > div
 {

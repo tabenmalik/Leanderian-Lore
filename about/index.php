@@ -1,16 +1,28 @@
 <?php
 	//this is the about index page
 	
+	/*	fix the spacing in the font
+		Put a pic for me
+		flow around pictures
+		pic for website?
+	
+	
+	*/
+	
 	$PAGE = 'about_index';
 	$DIR_PATH = '../';
 	
-	require_once $DIR_PATH.'core/section/visitorinformation.php';
+	require_once $DIR_PATH.'core/init/maininit.php';
+	protect();
+?>
+
+<?php
 	require_once $DIR_PATH.'core/section/overall/head.php';
 ?>
+	<div class="section">
 	<h2>The Author</h2>
-	<div class="message_wrapper">
-	<img class="profile_pic" src="<?php echo $DIR_PATH; ?>core/images/kameron.jpg" height="140" width="118" />
 	<p>
+	<img src="<?php echo $DIR_PATH; ?>core/images/kameron.jpg" height="140" width="118" />
 		Kameron is what you might consider average, 
 		but that's only skin deep. A unique personality with a talent 
 		for mastering accents quickly, comical timing, frustrating 
@@ -22,11 +34,10 @@
 	</p>
 	</div>
 	
-	<div class="textdivider">
-	</div>
+	<div class="section">
 	<h2>The Webmaster</h2>
 	<p>
-	<img class="prifile_pic" src="<?php echo $DIR_PATH; ?>core/images/taben.jpg" height="163" width="109" />
+	<img src="<?php echo $DIR_PATH; ?>core/images/taben.jpg" height="163" width="109" />
 		"Let there be light!"<br/>
 		"No." Taben responded.<br>
 		"Who dares to defy- oh. Hey man."<br>
@@ -45,12 +56,12 @@
 		honorable friend, Taben is a man I would be proud any day to call Brother.
 		-Kameron
 	</p>
-	
-	<div class="textdivider">
 	</div>
+	
+	<div class="section">
 	<h2>The Website</h2>
 	<p>
-	<img class="profile_pic" src="<?php echo $DIR_PATH; ?>core/images/LeanderianLoreLogo.gif" height="150" width="400" />
+	<img src="<?php echo $DIR_PATH; ?>core/images/LeanderianLoreLogo.gif" height="150" width="400" />
 		Though in the book, it is different (see the Author's Note), 
 		the Website actually came about as an offer. With the seniors leaving, 
 		the book incomplete, and no method of publication for those seniors to 
@@ -69,6 +80,7 @@
 		their lives after high school, to reconnect, and most importantly, to talk 
 		about what a great web-designer Taben is.
 	</p>
+	</div>
 <?php 
-	require_once $DIR_PATH.'core/section/overall/tail.php'; 
+	require_once $DIR_PATH.'core/section/overall/foot.php'; 
 ?>

@@ -1,158 +1,181 @@
-div
-{
+/*******************************************
+		This is my creation.
+		And since you are reading this
+		I would like to say that it makes 
+		me very happy that you are looking
+		at my work. I wish you the best.
+*******************************************/
+
+a{
+	text-decoration:none;
+	color:#000099;
+}
+
+
+header{
 	height:100%;
 	width:100%;
-	margin:0;
-	
 }
 
-.navdivider
-{
-	background-color: transparent;
-	width:20px;
-}
-
-.errors
-{
-	list-style-type: none;
-	padding:0;
-	margin:0 0 15px 0;
-	width:40em;
-}
-
-.errors li
-{
-	color:#DA0F00;
-}
-
-/*top left corner*/
-#top .left > div
-{
-	background-color: #000099;
-	border-bottom: #CCCCCC solid 3px;
-	border-left: #CCCCCC solid 3px;
-	border-bottom-left-radius: 100px;
-	min-height:100%;
-	min-width:8em;
-}
-
-/*top center edge*/
-#top .center > div
-{
-	background-color: #000099;
-	border-bottom: #CCCCCC solid 3px;
-	max-height:7em;
-	white-space: nowrap;
-	min-width: 60em;
-}
-
-#logo
-{
-	height:6em;
-	margin-top:8px;
-}
-
-#nav
-{
+nav{
 	float:right;
-	margin-right:8em;
-	border-collapse: collapse;
-	margin-top:3.25em;
+	margin-top:10px;
+	margin-right:30px;
 }
 
-#nav .navUnit
-{
-	position:relative;
-	width: 3em;
-}
-
-#nav tr td img
-{
-	width:100%;
-	height:1.7em;
-	padding:0;
-	margin:0;
-	display: block;
-}
-
-
-#nav tr .blocklink
-{
+nav td{
 	background-color:#DA0F00;
-	font-size:1.3em;
-	padding:2px;
-	text-shadow: 2px 2px black;
-	text-align:center;
-	width:initial;
-	padding: 3px;
-	display: block;
+	padding:3px;
+	text-shadow: black -1px 1px;
+	border-right:3px solid #000099;
+
+}
+
+.offset{
+	position: relative;
+	top:5px;
+	right:2px;
+}
+
+nav a{
 	color:white;
-	text-decoration:none;
+	font-size:1.5em;
 }
 
-/*top right corner*/
-#top .right > div
-{
-	background-color: #000099;
-	min-width:8em;
+h1{
+	font-size:2em;
+	margin:15px 15px 20px 0px;
 }
 
-/*center left edge*/
-#center .left > div
-{
+#logo{
+	color:white;
+	margin-top:1em;
+	width:7em;
+	font-size:3em;
+	margin-left:30px;
+	text-shadow: black -4px 4px;
 	
 }
 
-/*center center*/
-#center .center > div
-{
-	width:50em;
+h2{
+	font-size:1.5em;
+	margin:15px 15px 25px 0px;
+}
+
+h3{
+	font-size:1.17em;
+}
+
+h4{
+	font-size:1.12em;
+}
+
+h5{
+	font-size:.83em;
+}
+
+h6{
+	font-size:.75em;
+}
+
+p{
+	font-size:1.12em;
+	margin:15px 0px 10px 0px;
+}
+
+.footer{
+	display:inline;
+	font-size:1em;
+}
+
+label{
+	margin:3px 0px;
+}
+
+input{
+	margin:3px 0px;
+}
+
+.story{
+	max-width:45em;
+	font-size:1.5em;
+	font-family:"Indie Flower",sans-serif;
+}
+
+.survey{
+	width:20em;
 	margin:auto;
+}
+
+.small{
+	margin-top:20%;
+}
+
+ol, ul{
+	margin:7px 0px;
+}
+
+li{
+	margin:3px 0px;
+	list-style-type:none;
+}
+
+.errors{
+	color:#DA0F00;
 }
 
 textarea{
 	resize:none;
 }
 
-.b-wrap{
-	background-image: url('background.PNG');
-}
-
-/*center right edge*/
-#center .right
-{
+.section{
+	border-bottom: solid 4px #DA0F00;
+	padding: 5px;
+	margin-bottom:.5em;
 	overflow:hidden;
 }
 
-#center .right > div
-{
+.section h2{
+	text-align:center;
+}
+
+img{
+	float:left;
+	border:2px solid #CCCCCC;
+	margin: 0px 10px 10px 0px;
+}
+
+.board{
+	border:2px solid #CCCCCC;
+	width:100%;
+	min-height:4em;
+	padding:10px 10px;
+	margin: 0 15px 15px 0px;
+}
+
+.message{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.hide{
+	display:none;
+}
+
+.tab{
+	display:inline;
+	padding: 2px 3px 2px 3px;
+	border: 2px solid #CCCCCC;
+}
+
+.highlight{
+	border: 3px solid black;
 	background-color: #000099;
-	border-left: #CCCCCC solid 3px;
+	color: white;
 }
 
-/*bottom left corner*/
-#bottom .left > div
-{
-	background-color: #CCCCCC;
-}
-
-/*bottom center edge*/
-#bottom .center > div
-{
-	background-color: #CCCCCC;
-}
-
-
-/*bottom right corner*/
-#bottom .right 
-{
-	overflow:hidden;
-	background-color: #CCCCCC;
-}
-
-#bottom .right > div
-{
-	background-color: #000099;
-	border-left: #CCCCCC solid 3px;
-	border-bottom-left-radius: 100px;
+.messagetitle{
+	margin:0px 0px 20px 0px;
+	padding-bottom:5px;
+	border-bottom: #DA0F00 3px solid;
 }

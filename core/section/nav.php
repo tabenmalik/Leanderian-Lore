@@ -1,13 +1,15 @@
-<table id="nav">
-<tr>
-	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Lore</a></td>
-	<td class="navdivider"></td>
-	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Library</a></td>
-	<td class="navdivider"></td>
-	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">JOTW</a></td>
-	<td class="navdivider"></td>
-	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">About</a></td>
-	<td class="navdivider"></td>
-	<td class="navUnit"><img alt="" src="<?php echo $DIR_PATH.'core/images/'?>bookmark2.gif"/><a class="blocklink" href="http://www.google.com">Contact</a></td>
-</tr>
-</table>
+<nav>
+	<table>
+		<tr>
+			<td><a href="<?php echo $DIR_PATH; ?>"			>Lore</a></td>
+			<td><a href="<?php echo $DIR_PATH; ?>library"	>Library</a></td>
+			<td><a href="<?php echo $DIR_PATH; ?>jotw"		>JOTW</a></td>
+			<td><a href="<?php echo $DIR_PATH; ?>about"		>About</a></td>
+			<td><a href="<?php echo $DIR_PATH; ?>account"	>Account</a></td>
+			<?php if(!isAdmin()){ ?>
+			<td><a href="<?php echo $DIR_PATH; ?>contact"	>Contact</a></td>
+			<?php } ?>
+			<td><a href="<?php echo $DIR_PATH; ?>logout"	>Logout</a></td>
+		</tr>
+	</table>
+</nav>
